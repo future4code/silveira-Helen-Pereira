@@ -77,10 +77,10 @@ let  n2 = Number(prompt("Digite outro numero"));
  resultado = n1 === n2
  console.log("O primeiro numero é igual ao segundo?", resultado);
 
- resultado = n1 > n2 
+ resultado = n1 % n2 === 0
  console.log("O primeiro numero é divisível pelo segundo?", resultado);
 
- resultado = n2 > n1
+ resultado = n2 % n1 ===0
  console.log("O segundo numero é divisível pelo primeiro?", resultado);
 
  
