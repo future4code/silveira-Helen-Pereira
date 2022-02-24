@@ -120,6 +120,7 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
+ objetos
   const anoAtual2 = Number(prompt("Digite em que ano estamos"));
   const anoDeNascimento = Number(prompt("Digite o ano do seu nascimento"));
   const anoDaCarteira = Number(prompt("Digite a data da emissão da carteira de identidade"));
@@ -128,9 +129,22 @@ function checaRenovacaoRG() {
   const anosDeDiferenca = anoAtual2 - anoDaCarteira
 
   
-   criteriosRenovacao = (idadeUsuario2 >= 20 && anosDeDiferenca <= 5);
-   criteriosRenovacao2 = ((idadeUsuario2 >= 20 && idadeUsuario2 > 50) && anosDeDiferenca < 10);
-   criterioRenovacao3 = (idadeUsuario2 > 50 && anosDeDiferenca < 15);
+   criteriosRenovacao = (idadeUsuario2 >= 20 && anosDeDiferenca >= 5);
+   criteriosRenovacao2 = ((idadeUsuario2 >= 20 && idadeUsuario2 > 50) && anosDeDiferenca >=10);
+   criterioRenovacao3 = (idadeUsuario2 > 50 && anosDeDiferenca >= 15);
+
+  let anoAtual2 = Number( prompt("Digite em que ano estamos"));
+  let anoDeNascimento = Number( prompt("Digite o ano do seu nascimento"));
+  let anoDaCarteira = Number( prompt("Digite a data da emissão da carteira de identidade"));
+
+  let  idadeUsuario2 = anoAtual2 - anoDeNascimento
+  let anosDeDiferenca = anoAtual2 - anoDaCarteira
+
+  
+   criteriosRenovacao = (idadeUsuario2 <= 20 && anosDeDiferenca >= 5);
+   criteriosRenovacao2 = ((idadeUsuario2 > 20 && idadeUsuario2 <= 50) && anosDeDiferenca >= 10);
+   criterioRenovacao3 = (idadeUsuario2 > 50 && anosDeDiferenca >= 15);
+ master
  
   console.log(criteriosRenovacao || criteriosRenovacao2 || criterioRenovacao3);
 
