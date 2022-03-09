@@ -90,5 +90,4 @@ let  n2 = Number(prompt("Digite outro numero"));
 
 
 
-
   

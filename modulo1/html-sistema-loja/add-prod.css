@@ -1,0 +1,31 @@
+#titulo {
+    font-family: sans-serif;
+    font-size: 100px;
+    margin-top: auto;
+    margin-left: 500px;
+    
+}
+
+
+body {
+        font-family: Arial, Helvetica, sans-serif,;
+        background-color: #ffffff;
+        color: rgba(0,0,0,1);
+    }
+
+#menu {
+
+        background-color: #ffffff;
+        font-size: 15px,;
+        font-style: normal, rgba(0,0,0,1) ;
+        margin-left: 500px;
+        margin-top: -30px;  
+    } 
+
+    #estoque {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #produtos {
+        font-family: 'Courier New', Courier, monospace;
+    }
