@@ -126,13 +126,17 @@ td>img {
 
 td button {
     display: block;
-    background-color: #f3e3a2;
+    background-color: #f3db83;
     width: 150px;
     height: 30px;
     border-radius: 5px;
-    color: black;
+    color: rgb(236, 233, 233);
 }
+ #comprar:hover {
+     background-color:rgb(233, 233, 110) ;
 
+ }
+ 
 .container-do-search {
     margin-top: 20px;
     height: 100px;
@@ -140,15 +144,16 @@ td button {
 
 
 #back-button {
-    background-color: white;
+    background-color: gray;
     width: 100px;
     height: 20px;
     border: 1px solid black;
     border-radius: 5px;
     font-size: 10px;
-    color: black;
+    color: rgb(240, 233, 233);
 }
 
 #back-button:hover {
     background-color: #635a3d
+    
 }
