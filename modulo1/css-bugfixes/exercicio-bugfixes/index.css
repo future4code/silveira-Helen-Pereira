@@ -38,6 +38,8 @@ div img {
 }
 
 .botao-amarelo {
+    display: block;
+    margin: auto;
     background-color: #ffaf43;
     width: 250px;
     height: 40px;
@@ -102,7 +104,8 @@ table {
 }
 
 td button {
-    background-color: #fadf63;
+    display: block;
+    background-color: #f3e3a2;
     width: 150px;
     height: 30px;
     border-radius: 5px;
