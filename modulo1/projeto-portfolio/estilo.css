@@ -1,0 +1,156 @@
+
+/*HOME*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+/*CABEÇALHO*/
+
+header {
+    opacity: 1%;
+    background-color: rgb(197, 151, 240), ;
+    border-radius: 2%;
+    padding: 15px, 0px;
+    margin: auto;
+    margin-top: -10px;
+    font-size: 30px;
+   
+}
+
+ 
+
+
+    
+
+
+/*CORPO DA PÁGINA*/
+
+.mulher-programando {
+    max-width: 280px;
+    max-height: 280px;
+    margin-top: auto;
+    width: 70%;
+   margin: auto;
+  margin-left: -10px;
+   padding: 10px;
+   border-radius: 50%;
+   margin-top: -8px;
+   display: block;
+   opacity: 70%;
+}
+
+#menu {
+    font-family: href="https://fonts.gstatic.com" ;
+    font-size: 12px;
+    margin-left: 1000px;
+    margin-top: -140px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: auto;
+    opacity: 70%;
+    
+
+  
+}
+
+#menu:hover {
+    background-color: rgb(52, 6, 94);
+    color: rgb(9, 114, 206);
+    cursor: pointer;
+}
+
+#menu:active {
+    background-color: blue;
+    color: rgb(2, 48, 88);
+}
+
+h1 {
+    font-family: href="https://fonts.gstatic.com" ;
+    font-size: 40px;
+    width: 70%;
+   margin: auto;
+   margin-left: 300px;
+   padding: -20%;
+   margin-top: 200px;
+   
+}
+h3 {
+    font-size: 13px;
+    font-family:  href="https://fonts.gstatic.com"; 
+    font-style: italic;
+    width: 70%;
+   margin: auto;
+   margin-left: 500px;
+   padding: 20px, 5px;
+   margin-top: 12px;
+   
+   
+
+}
+
+.foto-perfil {
+    max-width: 280px;
+    max-height: 280px;
+    margin-top: auto;
+    width: 70%;
+   margin: auto;
+   margin-left: 600px;
+   padding: 50px;
+   border-radius: 50%;
+   margin-top: -10px;
+ 
+}
+
+.foto-comp {
+    margin-left: 450px;
+    
+    
+   
+}
+#display {
+    
+    display: block;
+   
+   
+   
+}
+
+#sobre-mim {
+    margin-bottom: 20px;
+    padding: 7%;
+    text-align: center;
+    background-color: rgb(186, 137, 231);
+    border-radius: 10%;
+}
+
+#sobre-mim > h1 {
+    font-size: 30px;
+    margin-top: auto;
+    margin-left: 180px;
+}
+
+.foto-labenu {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/*RODAPÉ*/
+footer {
+    margin: auto;
+    padding: 15px, 0px;
+}
+
+.insta {
+    max-width: 80px;
+    max-height: 80px;
+}
+.linkedin {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+
+
+
+/*FOMULÁRIO*/
