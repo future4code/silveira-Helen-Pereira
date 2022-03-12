@@ -1,0 +1,102 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+background-image: url(./img/mulher-programando.png);
+background-repeat: repeat;
+background-position: left center;
+padding: 8%;
+opacity: 80%;
+
+
+
+}
+
+body{
+    background-image: url(./img/tela-fundo.webp);
+    background-repeat: repeat;
+    background-position: left center;
+    opacity: 80%;
+}
+
+#menu {
+    font-family: href="https://fonts.gstatic.com" ;
+    font-size: 12px;
+    margin-left: 1000px;
+    margin-top: -5px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: auto;
+    opacity: 80%;
+}
+
+#menu:hover {
+    background-color: rgb(52, 6, 94);
+    color: rgb(9, 114, 206);
+    cursor: pointer;
+}
+
+#menu:active {
+    background-color: blue;
+    color: rgb(2, 48, 88);
+}
+
+#adicionar {
+    display: block;
+    margin-left: 600px;
+    margin-top: 90px;
+    
+}
+
+form {
+    margin-left: 450px;
+    margin-top: -150px;
+    font-size: 18px;
+    padding: 10%;
+    
+}
+
+/*RODAPÉ*/
+
+h2 {
+    margin: auto;
+    padding: 1%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: 200px;
+    margin-top: 60px;
+    margin-left: 645px;
+    display: block;
+    
+    
+}
+
+.insta {
+    max-width: 48px;
+    max-height: 48px;
+    margin-left: 710px;
+    margin-top: auto;
+    display: inline;
+   
+    
+}
+.linkedin {
+    max-width: 45px;
+    max-height: 45px;
+    margin-left: 30px;
+    display: inline;
+   
+    
+    
+}
+
+footer > p {
+padding: 5%;
+margin-left: 600px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: larger;
+font-style: italic;
+}
