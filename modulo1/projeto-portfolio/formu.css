@@ -24,12 +24,12 @@ body{
 #menu {
     font-family: href="https://fonts.gstatic.com" ;
     font-size: 12px;
-    margin-left: 1000px;
-    margin-top: -5px;
+    margin-left: 1142px;
+    margin-top: -10px;
     position: sticky;
     top: 0px;
     margin-bottom: auto;
-    opacity: 80%;
+    opacity: 70%;
 }
 
 #menu:hover {
@@ -52,7 +52,7 @@ body{
 
 form {
     margin-left: 450px;
-    margin-top: -150px;
+    margin-top: -120px;
     font-size: 18px;
     padding: 10%;
     
@@ -67,19 +67,21 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     text-align: 200px;
-    margin-top: 60px;
+    margin-top: -110px;
     margin-left: 645px;
     display: block;
     
     
 }
 
+
 .insta {
     max-width: 48px;
     max-height: 48px;
-    margin-left: 710px;
-    margin-top: auto;
+    margin-left: 660px;
+    margin-top: -30px;
     display: inline;
+    border-radius: 50%;
    
     
 }
@@ -88,14 +90,34 @@ h2 {
     max-height: 45px;
     margin-left: 30px;
     display: inline;
+    border-radius: 50%;
+}
    
+.github {
+   max-width: 50px;
+   max-height: 50px;
+   border-radius: 50%;
+   margin-left: 20px;
+}
     
-    
+.email {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+
+#frase-rodape {
+    margin-left: 100px;
+    text-align: center;
+    padding: 5%;
+    margin-top: -20px;
 }
 
 footer > p {
-padding: 5%;
-margin-left: 600px;
+padding: 2%;
+margin-left: 650px;
 font-family: Arial, Helvetica, sans-serif;
 font-size: larger;
 font-style: italic;
