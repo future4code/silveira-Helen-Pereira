@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    min-height: 100vh;
+    background-color: rgb(180, 157, 202);
+}
+/*CABEÇALHO*/
+
+header {
+background-color: rgb(180, 157, 202);
+grid-column: 1 / -1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 10px;
+border-radius: 30px;
+}
+
+input {
+    border-radius: 50px;
+}
+
+/*CONTEUDO*/
+
+main {
+    
+  display: flex;
+  justify-content: center;
+    
+    
+}
+
+
+
+/*RODAPÉ*/
+
+footer {
+    background-color: rgb(180, 157, 202);
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
