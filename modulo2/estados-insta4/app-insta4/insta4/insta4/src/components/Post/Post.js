@@ -8,6 +8,8 @@ import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
 import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
 
+
+
 const PostContainer = styled.div`
   border: 1px solid gray;
   width: 300px;
@@ -47,9 +49,11 @@ class Post extends React.Component {
     comentando: false,
     numeroComentarios: 0
   }
-
+  
+ 
   onClickCurtida = () => {
     console.log('Curtiu!')
+ 
   }
 
   onClickComentario = () => {
@@ -64,7 +68,8 @@ class Post extends React.Component {
       numeroComentarios: this.state.numeroComentarios + 1
     })
   }
-
+  
+  
   render() {
     let iconeCurtida
 
@@ -92,13 +97,13 @@ class Post extends React.Component {
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={this.onClickCurtida}
-          valorContador={this.state.numeroCurtidas + 1}
+          valorContador={this.state.numeroCurtidas }
         />
 
         <IconeComContador
           icone={iconeComentario}
           onClickIcone={this.onClickComentario}
-          valorContador={this.state.numeroComentarios}
+          valorContador={this.state.numeroComentarios }
         />
       </PostFooter>
       {componenteComentario}
