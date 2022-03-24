@@ -58,7 +58,7 @@ class Post extends React.Component {
     })
   }
 
-  aoEnviarComentario = () => {
+  aoEnviarComentario = (event) => {
     this.setState({
       comentando: false,
       numeroComentarios: this.state.numeroComentarios + 1
@@ -69,9 +69,9 @@ class Post extends React.Component {
     let iconeCurtida
 
     if(this.state.curtido) {
-      iconeCurtida = iconeCoracaoPreto
+      iconeCurtida = iconeCoracaoPreto 
     } else {
-      iconeCurtida = iconeCoracaoBranco
+      iconeCurtida = iconeCoracaoBranco 
     }
 
     let componenteComentario
@@ -92,7 +92,7 @@ class Post extends React.Component {
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={this.onClickCurtida}
-          valorContador={this.state.numeroCurtidas}
+          valorContador={this.state.numeroCurtidas + 1}
         />
 
         <IconeComContador
