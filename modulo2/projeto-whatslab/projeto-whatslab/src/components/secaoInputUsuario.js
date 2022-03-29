@@ -1,0 +1,6 @@
+const inputUsuario = () => {
+ usuario:""
+}
+
+
+
