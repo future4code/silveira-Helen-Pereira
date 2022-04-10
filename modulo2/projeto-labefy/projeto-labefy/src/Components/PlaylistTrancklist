@@ -10,7 +10,7 @@ const Box = styled.div`
     margin: 50px;
     justify-content: space-between;
 `
-const DivInputs = styled.div`
+const Inputs = styled.div`
     background-color: lightcyan;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ const DivInputs = styled.div`
     justify-content: center;
     padding-bottom: 10px;
 `
-const BoxAddTrack = styled.div`
+const AddTrack = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,12 +73,12 @@ export default class PlaylistTracklist extends React.Component {
                 Authorization: 'helen-pereira-silveira'
             }
         } )
-        .then((resposta) => {
-            this.setState({ tracklist: resposta.data.result.tracks });
+        .then((res) => {
+            this.setState({ tracklist: res.data.result.tracks });
             console.log(resposta)
         })
-        .catch((erro) => {
-            console.log(erro.message)
+        .catch((err) => {
+            console.log(err.message)
         })
     };
 
@@ -148,8 +148,8 @@ export default class PlaylistTracklist extends React.Component {
                           {Tracklist}
                           
                     </div>
-                    <BoxAddTrack>
-                        <DivInputs>
+                    <AddTrack>
+                        <Inputs>
                             <h3>Adicionar Música</h3>
                             <label><strong>Título</strong></label>
                             <input value={this.state.nomeMusica} onChange={this.onChangeNomeMusica}></input>
@@ -159,12 +159,12 @@ export default class PlaylistTracklist extends React.Component {
                             <input value={this.state.linkMusica} onChange={this.onChangeLinkMusica}></input>
                             <br />
                             <Botao onClick={this.adicionarMusicaNaPlaylist}>Adicionar</Botao>
-                        </DivInputs>
+                        </Inputs>
                         <BotaoDiv>
                             <Botao onClick={() => {this.props.mudarPagina("listaPlaylist", "")}}>Voltar para Lista</Botao>
                         </BotaoDiv>
                         
-                    </BoxAddTrack>
+                    </AddTrack>
                                   
                 </Box>
                 

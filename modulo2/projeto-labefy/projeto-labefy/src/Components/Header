@@ -7,7 +7,7 @@ const TituloLabefy = styled.h1`
     display: flex;
     width: 400px;
 `
-const BoxHeader = styled.div`
+const TodoHeader = styled.div`
     display: flex;
     justify-content: space-between;
     width: 800px;
@@ -16,10 +16,10 @@ const BoxHeader = styled.div`
 export default class Header extends React.Component {
     render() {
         return(
-            <BoxHeader>
+            <TodoHeader>
                 <TituloLabefy>Labefy</TituloLabefy>
                 <CriarPlaylist />
-            </BoxHeader>
+            </TodoHeader>
         )
     }
 };

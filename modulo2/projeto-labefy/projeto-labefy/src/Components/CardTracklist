@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const TrackDiv = styled.div`
+const Track = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,7 +25,7 @@ const Botao = styled.button`
     font-weight: bold;
 `
 
-const ConteudoDiv = styled.div`
+const Conteudo = styled.div`
     display: flex;
     width: 40rem;
     justify-content: space-between;
@@ -36,12 +36,12 @@ const ConteudoDiv = styled.div`
 const CardTracklist = (props) => {
         return (
             <BackgroundCard key={props.tracklistId}>
-                <ConteudoDiv>
-                    <TrackDiv>
+                <Conteudo>
+                    <Track>
                         <p><strong>Título: </strong>{props.name}</p>
                         <p><strong>Artista: </strong>{props.artist}</p>
                         <Botao onClick={() => {props.deletarMusica(props.tracklistId)}}>X Excluir</Botao>
-                    </TrackDiv>             
+                    </Track>             
                     <div>
                         <iframe src={props.url}
                         width="300vw"
@@ -50,7 +50,7 @@ const CardTracklist = (props) => {
                         allowtransparency="true" 
                         allow="encrypted-media" />
                     </div>                              
-                </ConteudoDiv>
+                </Conteudo>
             </BackgroundCard>
         )
     }

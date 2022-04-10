@@ -24,11 +24,11 @@ export default class PlaylistsList extends React.Component{
                 Authorization: 'helen-pereira-silveira'
             }
         })
-        .then((resposta) => {
-            this.setState({ playlists: resposta.data.result.list });
+        .then((res) => {
+            this.setState({ playlists: res.data.result.list });
         })
-        .catch((erro) => {
-            console.log(erro.message)
+        .catch((err) => {
+            console.log(err.message)
         
         })
     };
