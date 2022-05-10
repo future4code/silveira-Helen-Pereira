@@ -1,11 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LoginPage from './Components/LoginPage';
+import styled from 'styled-components';
+import RegisterPage from './Components/RegisterPage';
+import Router from './router'
+
+const AppContainer = styled.div`
+  display: flex;
+  align-items:center ;
+  flex-direction: column ;
+  padding: 10px;
+`;
 
 function App() {
   return (
-    <div className="App">
-     <p>Ola mundo</p>
-    </div>
+    <AppContainer >
+      <Router />
+    </AppContainer>
   );
 }
 

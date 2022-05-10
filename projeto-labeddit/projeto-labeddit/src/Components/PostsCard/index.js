@@ -4,30 +4,18 @@ import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
 
-
 const Container = styled.div`
-background-color: aquamarine;
+background-color: aliceblue;
 `
-const CssBaseline = styled.div `
-background-color: blueviolet;
-`
-const Avatar = styled.div`
-background-color: aqua;
-`
-const LockOutlinedIcon = styled.div`
-background-color: blue;
-`
-
-const Typography = styled.div`
-background-color: azure;
-`
-
-const TextField = styled.div`
+const CssBaseline = styled.div`
 background-color: beige;
+`
+const TextField = styled.div`
+background-color: aquamarine;
 `
 
 const Button = styled.div`
-background-color: black;
+background-color: blanchedalmond;
 `
 
 const baseUrl =
@@ -74,12 +62,7 @@ function LoginPage() {
     <Container>
       <CssBaseline />
       <div >
-        <Avatar >
-          <LockOutlinedIcon />
-        </Avatar>
-      <Typography variant="h4" align={"center"} gutterBottom>
-      LabEddit
-      </Typography>
+        
       
       <LoginForm onSubmit={onSubmitLogin}>
         <TextField
@@ -111,7 +94,7 @@ function LoginPage() {
      
       <ButtonRegister>
         <Link to={"/register"} >
-          <Button  type={"submit"}>
+          <Button type={"submit"}>
           Criar conta
           </Button>
         </Link>
