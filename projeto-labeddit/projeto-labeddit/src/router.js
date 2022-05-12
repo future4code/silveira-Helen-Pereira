@@ -3,8 +3,8 @@ import LoginPage from './Components/LoginPage/index'
 import {Switch, Route, BrowserRouter, useHistory} from 'react-router-dom'
 import RegisterPage from './Components/RegisterPage'
 import CommentPage from './Components/CommentPage'
-import PostsPage from './Components/FeedPage/index'
-import PostsCard from './Components/PostsCard/index'
+import PostsPage from './Components/FeedPage/FeedPage'
+import PostsCard from './Components/PostsCard/PostsCard'
 
 function Router() {
   return(
@@ -19,7 +19,7 @@ function Router() {
         <Route exact path='/timeline'>
           <PostsPage />
         </Route>
-        <Route exact path="/Post">
+        <Route exact path="/Post/:id" >
         </Route>
         <Route path='/'>
           <h3>Ops! Essa página não existe</h3>
@@ -30,4 +30,5 @@ function Router() {
 }
 
 export default Router
+
 

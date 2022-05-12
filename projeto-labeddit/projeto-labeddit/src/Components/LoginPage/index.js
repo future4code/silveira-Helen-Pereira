@@ -1,37 +1,40 @@
 import React, { useState } from "react";
+import Typography from "@material-ui/core/Typography";
+import { Button, TextField, Avatar,  } from "@material-ui/core";
 import { LoginForm, ButtonRegister, useStyles} from "./styled";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Container from '@material-ui/core/Container';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import styled from "styled-components";
 
 
+
 const Container = styled.div`
-background-color: aquamarine;
-`
-const CssBaseline = styled.div `
-background-color: blueviolet;
-`
-const Avatar = styled.div`
-background-color: aqua;
-`
-const LockOutlinedIcon = styled.div`
-background-color: blue;
+  display: grid;
+  gap: 8px;
+`;
+
+const LoginForm =styled.form`
+    display: grid;
+    gap: 8px;
 `
 
-const Typography = styled.div`
-background-color: azure;
-`
+const ButtonRegister = styled.div`
+    display: grid;
+grid-auto-flow: column;
+gap: 16px;
 
-const TextField = styled.div`
-background-color: beige;
-`
+  a {
+    text-decoration: none
+}
 
-const Button = styled.div`
-background-color: black;
-`
+`;
+
 
 const baseUrl =
-  "https://labeddit.herokuapp.com/labEddit/login";
+  " https://labeddit.herokuapp.com/labEddit/login";
 
 function LoginPage() {
   const classes = useStyles()
@@ -73,8 +76,8 @@ function LoginPage() {
   return (
     <Container>
       <CssBaseline />
-      <div >
-        <Avatar >
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
       <Typography variant="h4" align={"center"} gutterBottom>
@@ -104,14 +107,14 @@ function LoginPage() {
           required
           fullWidth
         />
-        <Button  type={"submit"}>
+        <Button variant={"contained"} className={classes.submit} fullWidth color="primary" type={"submit"}>
         Entrar
         </Button>
       </LoginForm>
      
       <ButtonRegister>
         <Link to={"/register"} >
-          <Button  type={"submit"}>
+          <Button variant={"outlined"} className={classes.register} fullWidth color="secondary" type={"submit"}>
           Criar conta
           </Button>
         </Link>
