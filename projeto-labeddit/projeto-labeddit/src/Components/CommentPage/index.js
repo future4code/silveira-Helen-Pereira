@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { StylesProvider } from '@material-ui/core/styles'
+
 import styled from "styled-components";
 
 
@@ -223,7 +223,7 @@ function CommentPage({
   }
   
   return (
-    <StylesProvider injectFirst>
+    
     <Main>
       {MountPost()}
       <div>
@@ -246,7 +246,7 @@ function CommentPage({
       </div>
       {MountComments()}
     </Main>
-    </StylesProvider>
+    
     )
   }
   
