@@ -1,0 +1,52 @@
+Exercicio 1
+
+ALTER TABLE Actor ADD favorite_ice_cream_flavor VARCHAR(255);
+
+ALTER TABLE Actor ADD type VARCHAR(255) DEFAULT "NotDirector";
+
+
+A) ALTER TABLE Actor DROP COLUMN salary;. Excluiria a coluna salário.
+
+B) ALTER TABLE Actor CHANGE gender sex VARCHAR(6);. Mudaria o nome da coluna de gender para sex.
+
+C) ALTER TABLE Actor CHANGE gender gender VARCHAR(255);. Erro, pois se seguirmos exatamente essa linha de código não existiria mais a coluna gender, consequentemente não conseguimos alterar oque não existe.
+
+
+Exercico 2 
+
+A) UPDATE Actor SET name = "Moacyr Franco", birth_date = "2020-02-10" WHERE id = "003";
+
+B)SELECT UPPER(name) from Actor WHERE name LIKE "juliana%";
+
+SELECT LOWER(name) from Actor WHERE name LIKE "juliana%";
+
+C) UPDATE Actor SET name = "Moacyr Franco", birth_date = "2020-02-10", salary= 600000, gender = "male" WHERE id = "005";
+
+
+Exercico 3
+
+A) DELETE FROM Actor WHERE name = "Fernanda Montenegro";
+
+B) DELETE FROM Actor WHERE gender = "male" AND salary > 100000000;
+
+Exercico 4 
+
+A) SELECT max(salary), min(salary) FROM Actor;
+
+B) SELECT min(salary) FROM Actor  WHERE gender = "female"; 
+
+C) SELECT count(*) FROM Actor WHERE gender = "female";
+
+D)SELECT sum(salary) FROM Actor;
+
+Exercicio 5 
+
+A) SELECT COUNT(*), gender FROM Actor GROUP BY gender; Essa query pede para fazer a contagem do gênero sexual e a quantidade que tem cada um na tabela actor.
+
+B) SELECT id, name FROM Actor ORDER BY name DESC;
+
+C) SELECT * FROM Actor ORDER BY salary;
+
+D) SELECT * FROM Actor ORDER BY salary DESC LIMIT 3;
+
+E) SELECT AVG(salary), gender FROM Actor GROUP BY gender;
