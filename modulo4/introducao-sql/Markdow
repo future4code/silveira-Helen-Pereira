@@ -1,0 +1,73 @@
+Exercicio 1
+
+A) CREATE TABLE: criação de tabela 
+VANCHAR: denominar que é uma string e o máximo de caracteres
+NOT NULL: o campo não pode estar vázio
+DATE: representa uma data 2022/06/06, sempre nessa sequência
+PRIMARY KEY: identificador único, chave primária
+
+B) SHOW DATABASE: Me retornou informções da minha pasta. SHOW TABLES: Me retornou insformações sobre minha tabela.
+
+Exercicio 2
+
+A) 
+
+B) A mensagem de erro é Duplicate entry '002' for key 'PRIMARY', quer dizer que o id deve ser unico para cada pessoa.
+
+C)  Código de erro: A contagem de colunas não corresponde à contagem de valores na linha. Pois especifiquei que queria alterar somente o id, name e salary.
+
+D) Código do erro: 1364. O campo 'name' não possui um valor padrão. Pois o campo nome é NOT NULL, obrigatório ter um valor. 
+
+E) Código do erro: 1292. Valor de data incorreto : '1950' para a coluna 'birth_date'. Estava faltando as "" na data de nascimento.
+
+
+Exercicio 3 
+
+A) SELECT id, name, salary, birth_date from Actor WHERE gender = "female"
+
+B) SELECT salary FROM Actor WHERE name = "Tony Ramos"
+
+C) SELECT * from Actor WHERE gender = "invalid", aparece todos null.
+
+D) SELECT id, name FROM Actor WHERE salary <= 500000
+
+E) Código de erro: 1054. Coluna desconhecida 'nome' na 'lista de campos', não é NOME é NAME.   
+SELECT id, name from Actor WHERE id = "002"
+
+Exercicio 4
+
+A) Ela quer saber os nomes que começam com a letra A ou J, não interessa as próximas letras, e o os sálarios maiores de 300.000.
+
+B) SELECT * FROM Actor
+WHERE name NOT LIKE "A%" AND salary > 350000;
+
+C) SELECT * FROM Actor
+WHERE name LIKE "%g%" OR name LIKE "%G%";
+
+D) SELECT * FROM Actor
+WHERE 
+	(name LIKE "%g%" OR name LIKE "%G%" OR name LIKE "%a%" OR name LIKE "%A%")
+  AND salary BETWEEN 350000 AND 900000;
+
+ Exercicio 6
+
+ A) SELECT id, titulo, avaliacao FROM filmes WHERE id = "004";
+
+ B) SELECT * FROM filmes WHERE titulo = "Doce de mãe";
+
+ C) SELECT id, titulo, sinopse FROM filmes WHERE avaliacao > 7;
+
+
+Exercicio 7 
+
+ A) SELECT * FROM filmes WHERE titulo LIKE "%vida%";
+
+ B) SELECT * FROM filmes WHERE titulo LIKE "%TERMO DE BUSCA%" OR sinopse LIKE "%TERMO DE BUSCA%";
+
+ C) SELECT * FROM filmes WHERE data_de_lancamento < "2020-05-04"; 
+
+ D)   SELECT * FROM filmes WHERE data_de_lancamento < "2020-05-04" AND 
+      (titulo LIKE "%TERMO DE BUSCA%" OR
+      sinopse LIKE "%TERMO DE BUSCA%") AND avaliacao > 7; 
+
+
