@@ -1,37 +1,48 @@
-import express, { Express } from "express";
-import knex from "knex";
-import cors from "cors";
-import dotenv from "dotenv";
-import { AddressInfo } from "net";
+import express, { Request, Response } from 'express';
+import cors from 'cors'
+import { Cadastro } from './entidade/Cadastro';
+import { CadastroRepositorio } from './repositorio/CadastroRepositorio';
+import { ReceitaRepositorio } from './repositorio/ReceitaRepositorio';
+import { Receita } from './entidade/Receita';
 
+import { Autenticacao } from './servicos/Autenticacao';
 
-dotenv.config();
+import { Criptografia } from './servicos/Criptografia';
 
-export const connection = knex({
- 
- client: "mysql",
- connection: {
- host: process.env.DB_HOST,
- port: 3306,
- user: process.env.DB_USER,
- password: process.env.DB_PASS,
- database: process.env.DB_NAME,
-},
-});
-
-const app: Express = express();
+const app = express();
 
 app.use(express.json());
-
 app.use(cors());
 
-const server = app.listen(process.env.PORT || 3003, () => {
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000!')
+})
 
-if (server) {
- const address = server.address() as AddressInfo;
- 
- console.log(`Server is running in http://localhost: ${address.port}`);
-} else {
- console.error(`Failure upon starting server.`);
-}
-});
+
+app.post("/cadastros", async (req: Request, res: Response) => {
+    const cadastro = req.body as Cadastro
+
+    if (cadastro != null && cadastro != undefined) {
+        const cadastroRepositorio = new CadastroRepositorio()
+
+        const criptografia = new Criptografia()
+        cadastro.senha = criptografia.geraHash(cadastro.senha)
+
+        const cadastroCriado = await cadastroRepositorio.cria(cadastro)
+        res.status(201).send(cadastroCriado)
+    } else {
+        res.status(500).send("Erro ao criar cadastro.")
+    }
+})
+
+app.post("/receitas", async (req: Request, res: Response) => {
+    const receita = req.body as Receita
+
+    if (receita != null && receita != undefined) {
+        const receitaRepositorio = new ReceitaRepositorio()
+        const receitaCriada = await receitaRepositorio.cria(receita)
+        res.status(201).send(receitaCriada)
+    } else {
+        res.status(500).send("Erro ao criar receita.")
+    }
+})
