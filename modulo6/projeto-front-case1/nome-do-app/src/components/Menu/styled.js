@@ -34,7 +34,7 @@ export const DropdownSelect = styled.select`
   cursor: pointer;
   outline: 0;
   color: #333333;
-  /* appearance: none; */
+   appearance: none; 
 
   option {
     background: white;
