@@ -34,6 +34,7 @@ export const Project = styled.div`
     button{
         margin-top: 12px;
         border-radius: 12px;
+        
     }
     img{
         margin-right: 22px;

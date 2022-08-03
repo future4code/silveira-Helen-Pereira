@@ -1,6 +1,7 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
+import Img from '../../images/corriculo.pdf'
 
 export const AboutContainer = styled.div`
     display: flex;
@@ -50,7 +51,7 @@ export const AboutPage = () => {
                 <p>JavaScript</p>
                 <p>TypeScript</p>
             </Tech>
-            <Button variant="contained">CV em PDF</Button>
+            <Button variant="contained" href={Img}>CV em PDF</Button>
         </AboutContainer>
     );
 };

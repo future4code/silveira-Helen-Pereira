@@ -12,7 +12,7 @@ export const ProjectItem = (props) => {
                 <h2>{props.name}</h2>
                 <p>{props.type}</p>
                 <p>{props.description}</p>
-                <Button variant="contained"> {props.button} </Button>
+                <Button variant="contained" > {props.button} </Button>
             </div>
         </Project>
     );

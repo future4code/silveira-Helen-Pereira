@@ -7,6 +7,8 @@ import desktop from '../../images/imac@2x.png';
 import { Button } from '@material-ui/core';
 import { useStyles } from '../../components/MaterialTheme';
 
+
+
 export const ProjectsPage = (props) => {
     const classes = useStyles()
     return (
@@ -18,8 +20,9 @@ export const ProjectsPage = (props) => {
                 background={'#011726'}
                 name={'LabeFood'}
                 type={'Front-end'}
-                description={''}
+                description={'https://ifuture-4food.surge.sh/'}
                 button={'Ver no GitHub'}
+                
             />
             <ProjectItem
                 row={'row-reverse'}
@@ -30,7 +33,7 @@ export const ProjectsPage = (props) => {
                 description={''}
                 button={'Ver no GitHub'}
             />
-            <ProjectItem
+            <ProjectItem 
                 row={'row'}
                 background={'#025e73'}
                 image={desktop}
@@ -39,9 +42,9 @@ export const ProjectsPage = (props) => {
                 description={``}
                 button={'Ver no GitHub'}
             />
-            <ProjectTitle background={'#024159'}>
+            <ProjectTitle background={'#024159'} >
                 <Button 
-                    classes={{ label: classes.label}}
+                    classes={{ label: classes.label}} href={'https://github.com/HelenCarolini'}
                 >   
                     mais projetos em breve
                 </Button>
