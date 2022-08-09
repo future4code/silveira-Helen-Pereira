@@ -15,6 +15,7 @@ import {
   } from "./styled"
   import logoLoterias from "../../img/logo_cef.svg"
   import NumbersList from "../../components/NumberList/index";
+ 
 
 
 
