@@ -8,26 +8,26 @@ export const HomeContainer = styled.div`
     background-color: #011726;
     img{
         //border-right: 5px solid #FFFFFF;
-        height: 450px;
-        margin-left: 150px;
-        margin-top: 100px;
+        height: 490px;
+        margin-left: 90px;
+        margin-top: 40px;
     }
 `;
 export const Presentation = styled.div`
-    width: 65%;
+    width: 60%;
     background-color: #011726;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10%;
+    padding: 15%;
     color: #FFFFFF;
     p{
         margin: 5px 0;
         font-weight: none;
-        font-size: 24px;
+        font-size: 20px;
     }
     span{
-        font-size: 16px;
+        font-size: 19px;
     }
 `;
 export const TitleName = styled.h1`
@@ -35,7 +35,7 @@ export const TitleName = styled.h1`
     color: #FFFFFF;
 `;
 export const Photo = styled.img`
-    width: 35%;
-    border-radius: 60%;
+    width: 25%;
+    border-radius: 40%;
   
 `;

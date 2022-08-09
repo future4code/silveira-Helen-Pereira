@@ -16,6 +16,7 @@ export const AboutContainer = styled.div`
         border-radius: 18px;
         width: 160px;
         background: #82d0d9;
+        
     }
 `;
 export const Tech = styled.div`

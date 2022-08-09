@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomeContainer, Presentation, TitleName, Photo } from './styled';
-import Img from "../../images/perfil.png"
+import Img from "../../images/perfilNovo.png"
 import { AboutPage } from './AboutPage';
 
 export const HomePage = () => {
