@@ -21,7 +21,7 @@ export const ProjectsPage = (props) => {
                 name={'LabeFood'}
                 type={'Front-end'}
                 description={'https://ifuture-4food.surge.sh/'}
-                button={'Ver no GitHub'}
+                button={'Ver no GitHub'} 
                 
             />
             <ProjectItem
